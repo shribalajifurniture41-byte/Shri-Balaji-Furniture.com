@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="hi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shri Balaji Furniture | Premium & Custom Furniture in Faridabad</title>
+    <meta name="description" content="Shri Balaji Furniture Faridabad - आपकी पसंद, हमारा डिज़ाइन। Sofa, Bed, Dining & Custom Furniture. Best quality wooden & luxury furniture at affordable prices.">
+
+    <!-- Google Fonts & Tailwind CSS CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Rozha+One&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            gold: '#C5A880',
+                            goldLight: '#E5D5BA',
+                            dark: '#1A1817',
+                            wood: '#5C3826',
+                            cream: '#FAF7F2'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        hindi: ['"Rozha One"', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gold-gradient {
+            background: linear-gradient(135deg, #DFBA73 0%, #C5A880 50%, #9E7D47 100%);
+        }
+        .dark-glass {
+            background: rgba(26, 24, 23, 0.85);
+            backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-brand-cream text-neutral-800 font-sans antialiased selection:bg-brand-gold selection:text-white">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-brand-dark text-brand-goldLight text-xs md:text-sm py-2 px-4 border-b border-white/10">
+        <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+            <div class="flex items-center gap-2">
+                <span class="inline-block w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+                <span>24x7 Store Open | Custom Orders Available Across Faridabad & NCR</span>
+            </div>
+            <div class="flex items-center gap-4 text-xs">
+                <a href="tel:+917501676788" class="hover:text-white transition flex items-center gap-1"><i class="fa-solid fa-phone"></i> +91 75016 76788</a>
+                <span class="opacity-40">|</span>
+                <a href="mailto:mehravikram572@gmail.com" class="hover:text-white transition flex items-center gap-1"><i class="fa-solid fa-envelope"></i> mehravikram572@gmail.com</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <header class="sticky top-0 z-40 dark-glass text-white shadow-xl transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-3">
+                <div class="w-12 h-12 rounded-full gold-gradient flex items-center justify-center text-brand-dark font-black text-2xl shadow-lg shadow-amber-900/30">
+                    <i class="fa-solid fa-couch"></i>
+                </div>
+                <div>
+                    <span class="block text-xl md:text-2xl font-extrabold tracking-wide text-white uppercase">Shri Balaji</span>
+                    <span class="block text-xs font-semibold text-brand-gold tracking-widest uppercase">Furniture Studio</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                <a href="#home" class="hover:text-brand-gold transition duration-200">होम (Home)</a>
+                <a href="#collections" class="hover:text-brand-gold transition duration-200">कलेक्शन (Categories)</a>
+                <a href="#custom-order" class="hover:text-brand-gold transition duration-200">कस्टम डिज़ाइन (Custom)</a>
+                <a href="#why-us" class="hover:text-brand-gold transition duration-200">खासियतें (Why Us)</a>
+                <a href="#reviews" class="hover:text-brand-gold transition duration-200">रिव्यूज (Reviews)</a>
+                <a href="#contact" class="hover:text-brand-gold transition duration-200">लोकेशन (Contact)</a>
+            </nav>
+
+            <!-- CTA Buttons -->
+            <div class="hidden lg:flex items-center gap-3">
+                <a href="https://wa.me/917501676788?text=Hello%20Shri%20Balaji%20Furniture,%20I%20want%20to%20enquire%20about%20furniture." target="_blank" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider flex items-center gap-2 shadow-md transition transform hover:-translate-y-0.5">
+                    <i class="fa-brands fa-whatsapp text-base"></i> WhatsApp
+                </a>
+                <a href="tel:+917501676788" class="gold-gradient text-brand-dark px-5 py-2.5 rounded-full text-xs font-extrabold uppercase tracking-wider flex items-center gap-2 shadow-md hover:brightness-110 transition transform hover:-translate-y-0.5">
+                    <i class="fa-solid fa-phone"></i> Call Now
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="mobileMenuBtn" class="md:hidden text-2xl text-brand-gold focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Dropdown -->
+        <div id="mobileMenu" class="hidden md:hidden bg-brand-dark border-t border-white/10 px-6 py-5 space-y-4">
+            <a href="#home" class="block text-white hover:text-brand-gold py-1">होम (Home)</a>
+            <a href="#collections" class="block text-white hover:text-brand-gold py-1">कलेक्शन (Categories)</a>
+            <a href="#custom-order" class="block text-white hover:text-brand-gold py-1">कस्टम डिज़ाइन (Custom)</a>
+            <a href="#why-us" class="block text-white hover:text-brand-gold py-1">खासियतें (Why Us)</a>
+            <a href="#contact" class="block text-white hover:text-brand-gold py-1">लोकेशन व सम्पर्क (Contact)</a>
+            <div class="pt-4 flex flex-col gap-3">
+                <a href="https://wa.me/917501676788" class="w-full text-center bg-green-600 text-white py-2.5 rounded-xl font-bold flex items-center justify-center gap-2"><i class="fa-brands fa-whatsapp"></i> WhatsApp Chat</a>
+                <a href="tel:+917501676788" class="w-full text-center gold-gradient text-brand-dark py-2.5 rounded-xl font-bold flex items-center justify-center gap-2"><i class="fa-solid fa-phone"></i> Direct Call</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative bg-brand-dark text-white min-h-[90vh] flex items-center overflow-hidden">
+        <div class="absolute inset-0 z-0 opacity-40">
+            <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1920&q=80" alt="Luxury Living Room Furniture" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-r from-brand-dark via-brand-dark/80 to-transparent"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32 grid lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-8 space-y-6 text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-brand-gold/40 bg-brand-gold/10 text-brand-goldLight text-xs md:text-sm font-semibold tracking-wider uppercase">
+                    ✨ आपकी पसंद, हमारा डिज़ाइन
+                </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight text-white">
+                    घर को दें <span class="text-transparent bg-clip-text gold-gradient">Premium & Stylish</span> Look.
+                </h1>
+                <p class="text-lg md:text-xl text-neutral-300 max-w-2xl font-light leading-relaxed">
+                    लग्जरी सोफा, किंग-साइज बेड, रॉयल डाइनिंग और मॉडर्न होम फर्नीचर — आपकी जरूरत और साइज के अनुसार कस्टमाइज्ड वुडन वर्क।
+                </p>
+
+                <!-- Key highlights icons -->
+                <div class="pt-2 flex flex-wrap justify-center lg:justify-start gap-4 text-xs font-semibold text-neutral-300">
+                    <span class="flex items-center gap-2 bg-white/5 backdrop-blur-md px-3.5 py-2 rounded-lg border border-white/10"><i class="fa-solid fa-truck-fast text-brand-gold"></i> Fast Faridabad Delivery</span>
+                    <span class="flex items-center gap-2 bg-white/5 backdrop-blur-md px-3.5 py-2 rounded-lg border border-white/10"><i class="fa-solid fa-gem text-brand-gold"></i> 100% Solid Teak/Sheesham</span>
+                    <span class="flex items-center gap-2 bg-white/5 backdrop-blur-md px-3.5 py-2 rounded-lg border border-white/10"><i class="fa-solid fa-clock text-brand-gold"></i> Open 9AM to 10PM For You</span>
+                </div>
+
+                <!-- Action Button Group -->
+                <div class="pt-6 flex flex-wrap justify-center lg:justify-start gap-4">
+                    <a href="#custom-order" class="gold-gradient text-brand-dark font-extrabold px-8 py-4 rounded-xl shadow-lg shadow-amber-900/40 hover:scale-105 transition duration-300 flex items-center gap-3">
+                        <i class="fa-solid fa-pencil-ruler"></i> कस्टमाइज़ ऑर्डर बुक करें
+                    </a>
+                    <a href="https://wa.me/917501676788?text=Hello%20Vikram%20Bhaiya,%20mujhe%20furniture%20designs%20or%20catalog%20dekhna%20hai." target="_blank" class="bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold px-8 py-4 rounded-xl backdrop-blur-md transition duration-300 flex items-center gap-3">
+                        <i class="fa-brands fa-whatsapp text-green-400 text-xl"></i> डिज़ाइन कैटलॉग मंगवाएं
+                    </a>
+                </div>
+            </div>
+
+            <!-- Side Card (Owner Info & Quick Connect) -->
+            <div class="lg:col-span-4">
+                <div class="bg-brand-dark/80 backdrop-blur-xl border border-brand-gold/30 p-8 rounded-3xl shadow-2xl space-y-6 text-center">
+                    <div class="w-24 h-24 mx-auto rounded-full gold-gradient p-1">
+                        <div class="w-full h-full rounded-full bg-brand-dark flex items-center justify-center text-3xl text-brand-gold">
+                            <i class="fa-solid fa-user-tie"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-white">Vikram Mehra</h3>
+                        <p class="text-sm text-brand-gold font-medium">Founder & Head Designer</p>
+                        <p class="text-xs text-neutral-400 mt-1">Shri Balaji Furniture, Sector 88 Faridabad</p>
+                    </div>
+
+                    <div class="p-4 bg-white/5 rounded-2xl border border-white/10 space-y-2 text-sm text-left">
+                        <div class="flex items-center justify-between text-neutral-300">
+                            <span><i class="fa-solid fa-door-open text-green-400 mr-2"></i>Status:</span>
+                            <span class="text-green-400 font-bold">Open 9AM to 10PM</span>
+                        </div>
+                        <div class="flex items-center justify-between text-neutral-300">
+                            <span><i class="fa-solid fa-shield-halved text-brand-gold mr-2"></i>Warranty:</span>
+                            <span class="text-white font-medium">Up to 10 Years</span>
+                        </div>
+                    </div>
+
+                    <div class="space-y-2">
+                        <a href="tel:+917501676788" class="w-full bg-brand-gold hover:bg-amber-400 text-brand-dark font-extrabold py-3 rounded-xl flex items-center justify-center gap-2 transition">
+                            <i class="fa-solid fa-phone"></i> Call: 7501676788
+                        </a>
+                        <a href="https://instagram.com/shribalaji_furniture_87" target="_blank" class="w-full bg-gradient-to-r from-purple-600 via-pink-600 to-amber-500 text-white font-bold py-2.5 rounded-xl flex items-center justify-center gap-2 hover:opacity-90 transition text-sm">
+                            <i class="fa-brands fa-instagram"></i> @shribalaji_furniture_87
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="bg-white py-10 border-b border-neutral-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div>
+                <p class="text-3xl md:text-4xl font-extrabold text-brand-wood">2,500+</p>
+                <p class="text-xs md:text-sm font-semibold text-neutral-500 mt-1">Happy Homes Furnished</p>
+            </div>
+            <div>
+                <p class="text-3xl md:text-4xl font-extrabold text-brand-wood">100%</p>
+                <p class="text-xs md:text-sm font-semibold text-neutral-500 mt-1">Custom Made Fit</p>
+            </div>
+            <div>
+                <p class="text-3xl md:text-4xl font-extrabold text-brand-wood">24/7</p>
+                <p class="text-xs md:text-sm font-semibold text-neutral-500 mt-1">Customer Consultation</p>
+            </div>
+            <div>
+                <p class="text-3xl md:text-4xl font-extrabold text-brand-wood">400+</p>
+                <p class="text-xs md:text-sm font-semibold text-neutral-500 mt-1">Instagram Family</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collections / Categories Showcase -->
+    <section id="collections" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+            <span class="text-xs uppercase font-extrabold text-brand-gold tracking-widest">Our Collections</span>
+            <h2 class="text-3xl md:text-4xl font-extrabold text-brand-dark">आपकी पसंद की हर कैटेगरी यहाँ उपलब्ध है</h2>
+            <p class="text-neutral-600">चाहे आपका 2BHK/3BHK फ्लैट हो या विला, हमारे पास हर स्पेस और बजट के लिए बेस्ट ऑप्शंस हैं।</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Item 1: Luxury Sofa Sets -->
+            <div class="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 border border-neutral-100 flex flex-col">
+                <div class="relative overflow-hidden h-60">
+                    <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=800&q=80" alt="Royal L-Shape Sofa" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <span class="absolute top-3 left-3 bg-brand-dark/90 text-brand-goldLight text-xs px-3 py-1 rounded-full font-semibold tracking-wide uppercase">Top Selling</span>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-brand-dark">Luxury Sofa</h3>
+                        <p class="text-sm text-neutral-500 mt-2">Fabric, Velvet & Pure Leatherette में कस्टमाइज़ साइज व कलर ऑप्शन्स।</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-neutral-100 flex items-center justify-between">
+                        <span class="text-xs text-neutral-400">Custom Size Available</span>
+                        <a href="https://wa.me/917501676788?text=I%20am%20interested%20in%20Luxury%20Sofa%20Sets" target="_blank" class="text-sm font-bold text-brand-wood hover:text-brand-gold flex items-center gap-1">
+                            Enquire <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 2: King & Queen Designer Beds -->
+            <div class="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 border border-neutral-100 flex flex-col">
+                <div class="relative overflow-hidden h-60">
+                    <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=80" alt="Designer Storage Bed" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <span class="absolute top-3 left-3 bg-brand-wood text-white text-xs px-3 py-1 rounded-full font-semibold tracking-wide uppercase">Hydraulic Storage</span>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-brand-dark">Royal Double Beds</h3>
+                        <p class="text-sm text-neutral-500 mt-2">हेवी हाइड्रोलिक स्टोरेज, कुशन हेडबोर्ड और वाटरप्रूफ प्लाईवुड फ्रेम।</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-neutral-100 flex items-center justify-between">
+                        <span class="text-xs text-neutral-400">Teak / Sheesham Wood</span>
+                        <a href="https://wa.me/917501676788?text=I%20am%20interested%20in%20Designer%20Beds" target="_blank" class="text-sm font-bold text-brand-wood hover:text-brand-gold flex items-center gap-1">
+                            Enquire <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 3: Royal Dining Tables -->
+            <div class="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 border border-neutral-100 flex flex-col">
+                <div class="relative overflow-hidden h-60">
+                    <img src="https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=800&q=80" alt="Marble Dining Table" class="w-full h-full object-cover group-hover:scale-110 transition duration-500"><span class="absolute top-3 left-3 bg-brand-dark/90 text-brand-goldLight text-xs px-3 py-1 rounded-full font-semibold tracking-wide uppercase">Italian Look</span>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-brand-dark">Dining Table Sets</h3>
+                        <p class="text-sm text-neutral-500 mt-2">4, 6 और 8 सीटर इटैलियन मार्बल व सॉलिड वुडन डाइनिंग टेबल्स और चेयर्स।</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-neutral-100 flex items-center justify-between">
+                        <span class="text-xs font-semibold text-neutral-400">Marble / Wood</span>
+                        <a href="https://wa.me/917501676788?text=Hello%20Vikram%20ji,%20I%20am%20interested%20in%20Dining%20Sets" target="_blank" class="text-sm font-bold text-brand-wood hover:text-brand-gold flex items-center gap-1">
+                            Enquire <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+            </div><!-- Card 4: Wardrobes & TV Panels -->
+            <div class="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 border border-neutral-100 flex flex-col">
+                <div class="relative overflow-hidden h-60">
+                    <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=800&q=80" alt="Wardrobe & TV Unit" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <span class="absolute top-3 left-3 bg-amber-700 text-white text-xs px-3 py-1 rounded-full font-semibold tracking-wide uppercase">Custom Fitting</span>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-brand-dark">Wardrobes & LED Units</h3>
+                        <p class="text-sm text-neutral-500 mt-2">स्लाइडिंग अलमारी, मॉडर्न टीवी पैनल, कंसोल टेबल और ड्रेसिंग यूनिट्स।</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-neutral-100 flex items-center justify-between">
+                        <span class="text-xs font-semibold text-neutral-400">Anti-Scratch</span>
+                        <a href="https://wa.me/917501676788?text=Hello%20Vikram%20ji,%20I%20am%20interested%20in%20Wardrobes%20and%20TV%20Units" target="_blank" class="text-sm font-bold text-brand-wood hover:text-brand-gold flex items-center gap-1">
+                            Enquire <i class="fa-solid fa-arrow-right text-xs">
+</i>
+                        </a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Order & Measurement Section -->
+    <section id="custom-order" class="py-20 bg-brand-dark text-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-6 space-y-6">
+                <span class="inline-block px-4 py-1.5 rounded-full bg-brand-gold/20 text-brand-gold border border-brand-gold/30 text-xs font-bold uppercase tracking-wider">
+                    Custom Order Available
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold leading-tight">
+                    Pinterest या Instagram का कोई भी डिज़ाइन लाएं, हम सेम तैयार करेंगे!
+                </h2>
+                <p class="text-neutral-300 font-light leading-relaxed">
+                    हर घर का साइज अलग होता है। श्री बालाजी फर्नीचर पर हम आपके फ्लैट या घर के सटीक नाप के अनुसार फर्नीचर तैयार करते हैं। अपनी पसंद का रंग, फैब्रिक और साइज चुनें।
+                </p><div class="space-y-4 pt-2">
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center text-brand-gold text-lg font-bold flex-shrink-0">
+                            1
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg text-white">डिज़ाइन या फोटो शेयर करें</h4>
+                            <p class="text-neutral-400 text-sm">व्हाट्सएप पर अपनी पसंद का कोई भी डिज़ाइन भेजें।</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center text-brand-gold text-lg font-bold flex-shrink-0">
+                            2
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg text-white">फ्री होम मेज़रमेंट & एस्टिमेट</h4>
+                            <p class="text-neutral-400 text-sm">फ़रीदाबाद में हमारी टीम आकर सही नाप लेती है और बेस्ट कोटेशन देती है।</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-startgap-4">
+                        <div class="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center text-brand-gold text-lg font-bold flex-shrink-0">
+                            3
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg text-white">परफेक्ट फिनिशिंग के साथ डिलीवरी</h4>
+                            <p class="text-neutral-400 text-sm">सुरक्षित व समय पर आपके घर डिलीवरी और इंस्टॉलेशन।</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Custom Order WhatsApp Form Box -->
+            <div class=
+"lg:col-span-6">
+                <div class="bg-white text-neutral-800 p-8 sm:p-10 rounded-3xl shadow-2xl border border-neutral-200">
+                    <h3 class="text-2xl font-bold text-brand-dark mb-1">कस्टम कोटेशन तुरंत प्राप्त करें</h3>
+                    <p class="text-sm text-neutral-500 mb-6">डिटेल्स भरें, सीधा Vikram के व्हाट्सएप पर आपका मैसेज जाएगा:</p>
+
+                    <form id="customFurnitureForm" class="space-y-4">
+                        <div>
+                            <label class="block text-xs font-bold text-neutral-700 uppercase mb-1">फर्नीचर की जरूरत</label>
+                                <select id="custType" class="w-full px-4 py-3 rounded-xl border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-brand-wood bg-white">
+                                    <option value="Sofa Set">Sofa Set (सोफा)</option>
+                                    <option value="Double Bed">Double Bed (बेड)</option>
+                                    <option value="Dining Table">Dining Table (डाइनिंग टेबल)</option>
+                                    <option value="Wardrobe">Wardrobe (अलमारी)</option>
+                                    <option value="Full House Furniture">Full Flat Furniture (पूरा घर)</option>
+                                    <option value="Other Custom Design">Other Custom Furniture</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-neutral-700 uppercase mb-1">फ़ोन नंबर (Phone)</label>
+                                <input type="tel" id="custPhone" required placeholder="जैसे: 9876543210" class="w-full px-4 py-3 rounded-xl border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-brand-wood">
+                            </div>
+                        </div><div>
+                            <label class="block text-xs font-bold text-neutral-700 uppercase mb-1">कोई खास साइज या डिटेल?</label>
+                            <textarea id="custMessage" rows="3" placeholder="जैसे: 6 Seater L-Shape Sofa, Grey Velvet..." class="w-full px-4 py-3 rounded-xl border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-brand-wood"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-4 rounded-xl flex items-center justify-center gap-2 shadow-lg transition duration-200">
+                            <i class="fa-brands fa-whatsapp text-2xl"></i> व्हाट्सएप पर तुरंत कोटेशन पाएं
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section><!-- Why Choose Us -->
+    <section id="why-us" class="py-20 bg-brand-cream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                <span class="text-xs uppercase font-extrabold text-brand-wood tracking-widest">Trust & Quality</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-brand-dark">श्री बालाजी फर्नीचर ही क्यों चुनें?</h2>
+                <p class="text-neutral-600">हम सिर्फ फर्नीचर नहीं बेचते, बल्कि आपके आशियाने को लक्ज़री और टिकाऊ लुक देते हैं।</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-neutral-200 hover:border-brand-gold transition duration-300 text-center space-y-4">
+                    <div class="w-16 h-16 mx-auto rounded-2xl bg-amber-50 flex items-center justify-center text-brand-wood text-2xl">
+                        <i class="fa-solid fa-tree"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-dark">100% मजबूत व दीमक-मुक्त लकड़ी</h3>
+                    <p class="text-sm text-neutral-500 leading-relaxed">हम उच्च क्वालिटी की सागवान (Teak), शीशम और वाटरप्रूफ HDHMR/Plywood का इस्तेमाल करते हैं जो सालों-साल चलती है।</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-neutral-200 hover:border-brand-gold transition duration-300 text-center space-y-4">
+                    <div class="w-16 h-16 mx-auto rounded-2xl bg-amber-50 flex items-center justify-center text-brand-wood text-2xl">
+                        <i class="fa-solid fa-tags"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-dark">डायरेक्ट फैक्ट्री रेट्स</h3>
+                    <p class="text-sm text-neutral-500 leading-relaxed">बिना किसी बड़े शोरूम के बिचौलियों के सीधा मैन्युफैक्चरर से माल पाएं। मॉल या शोरूम्स से 30% से 40% तक की सीधी बचत।</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-neutral-200 hover:border-brand-gold transition duration-300 text-center space-y-4">
+                    <div class="w-16 h-16 mx-auto rounded-2xl bg-amber-50 flex items-center justify-center text-brand-wood text-2xl">
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-dark">9AM to 10PM Open सेवा और सपोर्ट</h3>
+                    <p class="text-sm text-neutral-500 leading-relaxed">फ़रीदाबाद और आसपास कभी भी विजिट करें या कॉल करें। हम हमेशा आपकी मदद और कस्टमाइज़ेशन के लिए तैयार हैं।</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location, Google Map & Direct Contact Section -->
+    <section id="contact" class="py-20 bg-neutral-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12">
+                
+                <!-- Contact Details -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <span class="text-xs uppercase font-extrabold text-brand-gold tracking-widest">Visit Store</span>
+                        <h2 class="text-3xl font-extrabold mt-2 text-white">हमसे संपर्क करें</h2>
+                        <p class="text-neutral-400 text-sm mt-2">आप कभी भी हमारी वर्कशॉप या स्टोर पर आकर लकड़ी व मैटेरियल की क्वालिटी खुद देख सकते हैं।</p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl gold-gradient text-brand-dark flex items-center justify-center text-xl flex-shrink-0">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-brand-goldLight">दुकान का पूरा पता:</h4>
+                                <p class="text-neutral-300 text-sm mt-1 leading-relaxed">
+                                    87, Sector Rd, Bharat Colony, RPS City, Sector 88, Faridabad, Haryana 121014, India.<br>
+                                    <span class="text-xs text-brand-gold">(Near Yatharth Super Speciality Hospital)</span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-emerald-600 text-white flex items-center justify-center text-xl flex-shrink-0">
+                                <i class="fa-solid fa-phone-volume"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-brand-goldLight">फ़ोन व व्हाट्सएप:</h4>
+                                <p class="text-neutral-300 text-sm mt-1">
+                                    <a href="tel:+917501676788" class="hover:text-white font-bold text-base block">+91 75016 76788</a>
+                                    <span class="text-xs text-neutral-400">Contact Person: <strong>Vikram</strong></span>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-blue-600 text-white flex items-center justify-center text-xl flex-shrink-0">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-brand-goldLight">ईमेल:</h4>
+                                <p class="text-neutral-300 text-sm mt-1">
+                                    <a href="mailto:mehravikram572@gmail.com" class="hover:text-white">mehravikram572@gmail.com</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-yellow-500 via-pink-600 to-purple-700 text-white flex items-center justify-center text-xl flex-shrink-0">
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-brand-goldLight">इंस्टाग्राम हैंडल:</h4>
+                                <p class="text-neutral-300 text-sm mt-1">
+                                    <a href="https://instagram.com/shribalaji_furniture_87" target="_blank" class="hover:text-brand-gold underline font-semibold">@shribalaji_furniture_87</a>
+                                    <span class="block text-xs text-neutral-400">400+ Followers & Daily Furniture Updates</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Google Map Embed -->
+                <div class="lg:col-span-7 h-[420px] rounded-3xl overflow-hidden shadow-2xl border border-white/10 relative">
+                    <iframe 
+                        title="Shri Balaji Furniture Location Map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14041.590130922444!2d77.3482782!3d28.388713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cddec245f7783%3A0x7d27e26bf859a0f5!2sSector%2088%2C%20Faridabad%2C%20Haryana!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+                        class="w-full h-full border-0 filter grayscale contrast-125 hover:filter-none transition duration-500" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    <div class="absolute bottom-4 left-4 right-4 bg-brand-dark/95 backdrop-blur-md p-4 rounded-xl border border-brand-gold/30 flex flex-wrap items-center justify-between gap-2">
+                        <div class="text-xs">
+                            <p class="font-bold text-white">📍 Landmark: Near Yatharth Hospital</p>
+                            <p class="text-neutral-400">Sector 88, RPS City, Faridabad</p>
+                        </div>
+                        <a href="https://maps.google.com/?q=87,+Sector+Rd,+Bharat+Colony,+RPS+City,+Sector+88,+Faridabad,+Haryana+121014" target="_blank" class="text-xs font-bold gold-gradient text-brand-dark px-4 py-2 rounded-lg hover:brightness-110 transition">
+                            मैप पर रास्ता देखें <i class="fa-solid fa-diamond-turn-right ml-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-neutral-400 py-10 border-t border-white/10 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg gold-gradient flex items-center justify-center text-brand-dark font-black">
+                    <i class="fa-solid fa-couch text-xs"></i>
+                </div>
+                <span class="text-white font-extrabold text-base tracking-wide">SHRI BALAJI FURNITURE</span>
+            </div>
+            <p class="text-xs text-center">
+                © <span id="currentYear"></span> Shri Balaji Furniture. Managed by Vikram. All Rights Reserved.
+            </p>
+            <div class="flex items-center space-x-6 text-base">
+                <a href="tel:+917501676788" class="hover:text-white transition"><i class="fa-solid fa-phone"></i></a>
+                <a href="https://wa.me/917501676788" target="_blank" class="hover:text-emerald-500 transition"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://instagram.com/shribalaji_furniture_87" target="_blank" class="hover:text-pink-500 transition"><i class="fa-brands fa-instagram"></i></a>
+                <a href="mailto:mehravikram572@gmail.com" class="hover:text-white transition"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Fixed Floating Call & WhatsApp Action Buttons -->
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
+        <!-- Direct Phone Call Button -->
+        <a href="tel:+917501676788" class="w-14 h-14 rounded-full bg-brand-wood text-white flex items-center justify-center text-2xl shadow-2xl hover:scale-110 transition duration-300 border-2 border-white/40" title="Call Vikram Directly">
+            <i class="fa-solid fa-phone animate-pulse"></i>
+        </a>
+        <!-- WhatsApp Chat Button -->
+        <a href="https://wa.me/917501676788?text=Hello%20Vikram%20ji,%20I%20want%20to%20enquire%20about%20furniture%20designs." target="_blank" class="w-14 h-14 rounded-full bg-emerald-500 text-white flex items-center justify-center text-3xl shadow-2xl hover:scale-110 transition duration-300 border-2 border-white/40" title="Chat on WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- JavaScript Logic -->
+    <script>
+        // Set dynamic current year
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Mobile Menu Toggle
+        const mobileBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        mobileBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu on clicking any link
+        document.querySelectorAll('#mobileMenu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Custom Furniture WhatsApp Lead Form Automation
+        document.getElementById('customFurnitureForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('custName').value.trim();
+            const type = document.getElementById('custType').value;
+            const phone = document.getElementById('custPhone').value.trim();
+            const message = document.getElementById('custMessage').value.trim() || 'No special requirements';
+
+            const whatsappMessage = New Furniture Enquiry from Website!%0A%0A*Name:* ${encodeURIComponent(name)}%0A*Phone:* ${encodeURIComponent(phone)}%0A*Requirement:* ${encodeURIComponent(type)}%0A*Details:* ${encodeURIComponent(message)}%0A%0APlease share quotation and catalog.;
+
+            window.open(https://wa.me/917501676788?text=${whatsappMessage}, '_blank');
+        });
+    </script>
+</body>
+</html>
